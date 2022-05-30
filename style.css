@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 30%;
+    height: 15%;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1em;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    padding: 1em;
+    color: hsl(0, 0%, 100%);
+}
+.equil {
+    max-width: 100%;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+.title {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+#description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.creator {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1em;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    
+}
+#eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    margin-bottom: 1em;
+    display: inline;
+}
+#left {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+#avatar {
+    width: 2em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+#jules {
+    margin-left: 0.5em;
+}
+#creat {
+    color: hsl(215, 51%, 70%);
+}
+
+.cyan:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.equilhover :hover {
+    filter: hsl(178, 100%, 50%);
+}
