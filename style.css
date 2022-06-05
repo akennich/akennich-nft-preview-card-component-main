@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body {
     background-color: hsl(217, 54%, 11%);
@@ -10,15 +11,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 2vw;
 }
 .card {
-    width: 30%;
+    width: 40%;
     background-color: hsl(216, 50%, 16%);
     border-radius: 1em;
-    font-size: 18px;
     font-family: 'Outfit', sans-serif;
     padding: 1em;
-  
 }
 .title {
     color: hsl(0, 0%, 100%);
@@ -40,7 +40,9 @@ body {
     align-items: center;
     padding-top: 1em;
     border-top: 1px solid hsl(215, 51%, 70%);
-    
+}
+.jules{
+    font-size: 1em;
 }
 #eth {
     color: hsl(178, 100%, 50%);
@@ -70,18 +72,25 @@ body {
     cursor: pointer;
 }
 .image {
-    width: 100%;
-    height: 23rem;
-    background-size: contain;
+    position: relative;
+    padding-top: 100%; 
     background-image: url("./images/image-equilibrium.jpg") ;
     border-radius: 0.5em;
     margin-bottom: 1em;
+    background-size: cover;
 }
 .filtre {
-    height: 23rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     border-radius: 0.5em;
 }
 .image :hover {
     background: rgba(0,255,255,0.4);
     cursor: pointer;
+}
+.attribution {
+    font-size: 1.2vw;
 }
