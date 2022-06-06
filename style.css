@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 body {
     background-color: hsl(217, 54%, 11%);
@@ -11,19 +10,44 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;
 }
 .card {
-    width: 25rem;
+    width: 21rem;
     background-color: hsl(216, 50%, 16%);
-    border-radius: 1em;
+    border-radius: 1rem;
+    font-size: 18px;
     font-family: 'Outfit', sans-serif;
     padding: 1em;
 }
+.icon-area {
+    position: relative;
+    width: 100%;
+}
+.image img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.image-filter{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: hsl(178, 100%, 50%, 0.8);
+    opacity: 0;
+}
+.image-filter:hover {
+    opacity: 0.9;
+    cursor: pointer;
+} 
 .title {
     color: hsl(0, 0%, 100%);
     font-weight: 600;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 .description {
     color: hsl(215, 51%, 70%);
@@ -40,12 +64,6 @@ body {
     align-items: center;
     padding-top: 1em;
     border-top: 1px solid hsl(215, 51%, 70%);
-}
-.jules{
-    font-size: 1em;
-}
-.white{
-    color: white;
 }
 #eth {
     color: hsl(178, 100%, 50%);
@@ -66,6 +84,9 @@ body {
 #jules {
     margin-left: 0.5em;
 }
+.white {
+    color: white;
+}
 #creat {
     color: hsl(215, 51%, 70%);
 }
@@ -74,26 +95,5 @@ body {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
-.image {
-    position: relative;
-    padding-top: 100%; 
-    background-image: url("./images/image-equilibrium.jpg") ;
-    border-radius: 0.5em;
-    margin-bottom: 1em;
-    background-size: cover;
-}
-.filtre {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 0.5em;
-}
-.image :hover {
-    background: rgba(0,255,255,0.4);
-    cursor: pointer;
-}
-.attribution {
-    font-size: 1.2vw;
-}
+
+
